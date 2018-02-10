@@ -1,5 +1,4 @@
 import React from 'react';
-import moment from 'moment';
 import { storiesOf } from '@storybook/react';
 
 import SingleDatePickerWrapper from '../examples/SingleDatePickerWrapper';
@@ -98,12 +97,6 @@ storiesOf('SDP - Calendar Props', module)
   .addWithInfo('does not autoclose the DayPicker on date selection', () => (
     <SingleDatePickerWrapper
       keepOpenOnDateSelect
-      autoFocus
-    />
-  ))
-  .addWithInfo('with month specified on open', () => (
-    <SingleDatePickerWrapper
-      initialVisibleMonth={() => moment().add(10, 'months')}
       autoFocus
     />
   ))

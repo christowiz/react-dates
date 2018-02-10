@@ -81,6 +81,7 @@
     "karma-webpack": "^2.0.3",
     "mocha": "^3.5.0",
     "mocha-wrap": "^2.1.1",
+    "moment": "^2.20.1",
     "node-sass": "^4.5.3",
     "nyc": "^11.1.0",
     "raw-loader": "^0.5.1",
@@ -96,7 +97,8 @@
     "sinon": "^3.2.1",
     "sinon-sandbox": "^1.0.2",
     "style-loader": "^0.16.1",
-    "webpack": "^2.6.1"
+    "webpack": "^2.6.1",
+    "webpack-bundle-analyzer": "^2.10.0"
   },
   "dependencies": {
     "airbnb-prop-types": "^2.8.1",

@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const srcFolder = path.join(__dirname, 'src', 'components');
 const components = fs.readdirSync(srcFolder);
@@ -70,6 +71,9 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new BundleAnalyzerPlugin()
+  ],
   resolve: {
     extensions: ['.js', '.jsx'],
   },

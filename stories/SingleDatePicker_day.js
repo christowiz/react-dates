@@ -1,6 +1,7 @@
 import React from 'react';
-import moment from 'moment';
 import { storiesOf } from '@storybook/react';
+
+import { moment } from '../src/utils/DateObj';
 
 import isInclusivelyAfterDay from '../src/utils/isInclusivelyAfterDay';
 import isSameDay from '../src/utils/isSameDay';

@@ -1,6 +1,4 @@
 import React from 'react';
-import moment from 'moment';
-import momentJalaali from 'moment-jalaali';
 import { storiesOf } from '@storybook/react';
 
 import SingleDatePickerWrapper from '../examples/SingleDatePickerWrapper';
@@ -32,27 +30,4 @@ storiesOf('SingleDatePicker (SDP)', module)
       <TestInput placeholder="Input 2" />
       <TestInput placeholder="Input 3" />
     </div>
-   ))
-  .addWithInfo('non-english locale (Chinese)', () => {
-    moment.locale('zh-cn');
-    return (
-      <SingleDatePickerWrapper
-        placeholder="入住日期"
-        monthFormat="YYYY[年]MMMM"
-        phrases={{
-          closeDatePicker: '关闭',
-          clearDate: '清除日期',
-        }}
-      />
-    );
-  })
-  .addWithInfo('non-english locale (Persian)', () => {
-    moment.locale('fa');
-    return (
-      <SingleDatePickerWrapper
-        placeholder="تقویم فارسی"
-        renderMonth={month => momentJalaali(month).format('jMMMM jYYYY')}
-        renderDay={day => momentJalaali(day).format('jD')}
-      />
-    );
-  });
+  ));

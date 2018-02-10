@@ -71,6 +71,7 @@ const propTypes = forbidExtraProps({
   monthFormat: PropTypes.string,
   weekDayFormat: PropTypes.string,
   phrases: PropTypes.shape(getPhrasePropTypes(DayPickerPhrases)),
+  isRTL: PropTypes.bool,
   locale: PropTypes.object,
 });
 

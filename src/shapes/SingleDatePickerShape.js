@@ -69,4 +69,6 @@ export default {
   monthFormat: PropTypes.string,
   weekDayFormat: PropTypes.string,
   phrases: PropTypes.shape(getPhrasePropTypes(SingleDatePickerPhrases)),
+
+  locale: PropTypes.string,
 };

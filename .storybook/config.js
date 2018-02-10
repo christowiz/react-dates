@@ -1,15 +1,13 @@
 import React from 'react';
-import moment from 'moment';
 import { configure, addDecorator, setAddon } from '@storybook/react';
 import infoAddon from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 import './storybook.scss';
 import '../css/styles.scss';
 
-addDecorator((story) => {
-  moment.locale('en');
-  return (story());
-});
+addDecorator(story =>
+  (story()),
+);
 
 function getLink(href, text) {
   return `<a href=${href} rel="noopener noreferrer" target="_blank">${text}</a>`;
@@ -51,17 +49,10 @@ setOptions({
 });
 
 function loadStories() {
-  require('../stories/DateRangePicker');
-  require('../stories/DateRangePicker_input');
-  require('../stories/DateRangePicker_calendar');
-  require('../stories/DateRangePicker_day');
   require('../stories/SingleDatePicker');
   require('../stories/SingleDatePicker_input');
   require('../stories/SingleDatePicker_calendar');
   require('../stories/SingleDatePicker_day');
-  require('../stories/DayPickerRangeController');
-  require('../stories/DayPickerSingleDateController');
-  require('../stories/DayPicker');
 }
 
 setAddon(infoAddon);

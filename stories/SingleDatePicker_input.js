@@ -1,6 +1,7 @@
 import React from 'react';
-import moment from 'moment';
 import { storiesOf } from '@storybook/react';
+
+import { moment } from '../src/utils/DateObj';
 
 import SingleDatePickerWrapper from '../examples/SingleDatePickerWrapper';
 
